@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Buenard&family=Cormorant+Garamond:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.texto-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 header a {
   padding: 0; }
   header a img {
@@ -8,7 +15,8 @@ header {
   background-color: #222;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  height: 100px; }
   header nav ul {
     list-style: none;
     text-align: end; }
@@ -16,6 +24,7 @@ header {
       display: inline-block;
       margin: 20px; }
       header nav ul li a {
+        font-size: 15px;
         text-decoration: none;
         color: #fff;
         background-color: #fd7f18;
@@ -25,20 +34,48 @@ header {
           background-color: #fff;
           color: #222; }
 
-.grid-galeria {
+.texto-h1 {
+  font-size: 80px;
+  font-family: 'Bebas Neue';
+  color: #222;
+  background-image: url(../img/casa-kame.jpg);
+  background-size: cover;
   width: 100%;
-  height: 100%;
-  margin-top: 40px;
-  margin-bottom: 200px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 250px;
-  gap: 15px; }
-  .grid-galeria div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px; }
+  height: 90vh; }
+
+.texto-h2 {
+  background-color: #fd7f18;
+  padding: 5px;
+  width: 200px;
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.catalogo img {
+  height: 300px;
+  object-fit: cover; }
+
+.catalogo {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+  text-align: center;
+  overflow: auto; }
+  .catalogo div a {
+    width: 90px;
+    background-color: #222;
+    border: 2px solid #fd7f18;
+    color: #fff;
+    padding: 5px; }
+    .catalogo div a:hover {
+      background-color: #222;
+      color: #fd7f18;
+      border: 2px solid #fd7f18; }
 
 .footer img {
   margin: 10px;
@@ -46,22 +83,17 @@ header {
 
 .footer {
   background-color: #222;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0; }
+  padding: 0;
+  height: 300px; }
   .footer ul {
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
-    padding: 0; }
+    list-style: none; }
     .footer ul li {
       list-style: none;
       margin: 10px;
       text-align: center; }
       .footer ul li a {
         text-decoration: none;
-        color: white; }
+        color: #fff; }
         .footer ul li a:hover {
           color: #fd7f18;
           font-size: large; }
