@@ -3,7 +3,17 @@
 @import "./base/_variables.scss";
 @import"./base/_maps.scss";
 @import "./base/_extends.scss";
-@import "./base/mixin";
+@import "./base/_mixin";
+@import "./acercade";
+@import "./contacto";
+@import "./galeria";
+@import "./informacion";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 // HEADER / NAV
 header {
